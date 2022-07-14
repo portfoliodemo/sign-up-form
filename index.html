@@ -12,8 +12,32 @@
 <body>
     
     <header>
-        <h1>Sign Up Form</h1>
+        <h1>Let's Play!</h1>
     </header>
+
+    <section>
+        <p>Ready to play hockey? Tonight? Then what are you waiting for? Sign up below!</p>
+    </section>
+
+    <main>
+        <form action="#" method="put">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="First Name" name="firstName" title="Please enter your first name."> 
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Last Name" name="lastName" title="Please enter your last name.">
+            <label for="email-address">Email:</label>
+            <input type="email" id="email-address" name="emailAddress" placeholder="example@xyz.com" title="Please enter a valid email address. example@xyz.com">
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" placeholder="867-5309" name="telephoneNumber" title="Please enter a valid telephone number. Example: 867-5309">
+            <label for="enter-password">Enter Password:</label>
+            <input type="password" id="enter-password" placeholder="********" name="enterPassword" title="Please enter a password containing at least 16 characters, with at least one digit, one lowercase character, one uppercase character and one symbol.">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" placeholder="********" name="confirmPassword" title="Please enter a matching valid password.">
+            <button type="submit">Create Account</button>
+        </form>
+
+            <p>Already have an account? <a href="#" title="Login">Login</a></p>
+    </main>
 
 </body>
 </html>
