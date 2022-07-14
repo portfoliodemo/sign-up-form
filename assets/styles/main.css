@@ -1,6 +1,75 @@
 
-/* Border Box.. */
+/* Add Border Box to all elements */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Visualize every element with a white box - debugging */
+/* * {
+    outline: 1px solid whitesmoke !important;
+  } */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+header {
+    display: grid;
+    background-image: url(../images/arena-Oilers.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: whitesmoke;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.odin-logo {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.712); 
+    padding: 1em;
+    height: 20%;
+    justify-content: space-evenly;
+}
+
+.odin-logo img {
+    height: 100%;
+}
 
 h1 {
+    display: inline;
+    font-family: 'Bowlby One SC', cursive;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding: 2em;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
