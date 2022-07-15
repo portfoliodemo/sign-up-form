@@ -63,6 +63,18 @@ main {
     padding: 2em;
 }
 
+main section p {
+    font-family: 'Albert Sans', sans-serif;
+}
+
+form {
+    display: grid;
+}
+
+.form-inputs {
+    display: grid;
+}
+
 /* Media Queries */
 
 @media (max-width: 480px) {
