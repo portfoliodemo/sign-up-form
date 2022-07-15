@@ -63,23 +63,57 @@ main {
     padding: 2em;
 }
 
+main p {
+    font-family: 'Albert Sans', sans-serif;
+}
+
+section {
+    background-color: azure;
+    border-radius: 1em;
+}
+
 main section p {
     font-family: 'Albert Sans', sans-serif;
+    padding: 1em;
+    margin: 1em;
 }
 
 form {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    font-family: 'Albert Sans', sans-serif;
 }
 
 .form-inputs {
     display: grid;
 }
 
+input {
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: rgb(9, 83, 9);
+    color: whitesmoke;
+    border-radius: 0.25em;
+    font-family: 'Albert Sans', sans-serif;
+    padding: 0.5em 1em;
+    font-size: 1.25em;
+}
+
 /* Media Queries */
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
 
     .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    form {
         display: grid;
         grid-template-columns: 1fr;
     }
