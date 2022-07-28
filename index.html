@@ -38,27 +38,27 @@
                 </fieldset> -->
                 <div class="form-inputs">
                     <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" placeholder="First Name" name="firstName" title="Please enter your first name."> 
+                    <input type="text" id="first-name" placeholder="First Name" name="firstName" title="Please enter your first name." required> 
                 </div>
                 <div class="form-inputs">
                     <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" placeholder="Last Name" name="lastName" title="Please enter your last name.">                    
+                    <input type="text" id="last-name" placeholder="Last Name" name="lastName" title="Please enter your last name." required>                    
                 </div>
                 <div class="form-inputs">
                     <label for="email-address">Email:</label>
-                    <input type="email" id="email-address" name="emailAddress" placeholder="example@xyz.com" title="Please enter a valid email address. example@xyz.com">                    
+                    <input type="email" id="email-address" name="emailAddress" placeholder="example@xyz.com" title="Please enter a valid email address. example@xyz.com" required>                    
                 </div>
                 <div class="form-inputs">
                     <label for="telephone">Telephone:</label>
-                    <input type="tel" id="telephone" placeholder="867-5309" name="telephoneNumber" title="Please enter a valid telephone number. Example: 867-5309">                    
+                    <input type="tel" id="telephone" placeholder="867-5309" name="telephoneNumber" title="Please enter a valid telephone number. Example: 1 (708) 867-5309" minlength="7" maxlength="16" required>                    
                 </div>
                 <div class="form-inputs">
                     <label for="enter-password">Enter Password:</label>
-                    <input type="password" id="enter-password" placeholder="********" name="enterPassword" title="Please enter a password containing at least 16 characters, with at least one digit, one lowercase character, one uppercase character and one symbol.">                    
+                    <input type="password" id="enter-password" placeholder="********" name="enterPassword" minlength="16" title="Please enter a password containing at least 16 characters, with at least one digit, one lowercase character, one uppercase character and one symbol." required>                    
                 </div>
                 <div class="form-inputs">
                     <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" placeholder="********" name="confirmPassword" title="Please enter a matching valid password.">                    
+                    <input type="password" id="confirm-password" placeholder="********" name="confirmPassword" minlength="16" title="Please enter a matching valid password." required>                    
                 </div>
                 <button type="submit">Create Account</button>
             </form>

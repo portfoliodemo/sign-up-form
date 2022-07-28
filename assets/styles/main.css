@@ -74,8 +74,8 @@ section {
 
 main section p {
     font-family: 'Albert Sans', sans-serif;
-    padding: 1em;
-    margin: 1em;
+    padding: 0.5em 1.5em;
+    margin: 0.25em;
 }
 
 form {
@@ -84,19 +84,60 @@ form {
     align-content: center;
     justify-items: center;
     font-family: 'Albert Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-family: 'Albert Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
 }
 
 .form-inputs {
     display: grid;
+    /* &:invalid:not(:focus):not(:placeholder-shown) {
+        background: pink;
+    } */
 }
 
 input {
     margin-top: 0.25em;
     margin-bottom: 1em;
+    border-color: #E5E7EB;
+    border-width: 0.125em;
+    border-style: solid;
+    border-radius: 0.25em;
+    padding: 0.25em;
+}
+
+/* input:invalid {
+    background: hsla(0, 90%, 70%, 1);
+} */
+
+input:valid {
+    background: hsla(100, 90%, 70%, 1);
+}
+
+input:focus {
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+    border-color: lightblue;
+    border-width: 0.125em;
+    border-style: solid;
+    border-radius: 0.25em;
+    padding: 0.25em;
+    box-shadow: #2a3436;
+    /* box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3); */
 }
 
 button {
-    background-color: rgb(9, 83, 9);
+    /* background-color: rgb(9, 83, 9); */
+    background-color: #2a3436;
     color: whitesmoke;
     border-radius: 0.25em;
     font-family: 'Albert Sans', sans-serif;
