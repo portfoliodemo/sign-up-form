@@ -33,7 +33,7 @@ header {
     background-image: url(../images/arena-Oilers.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     color: whitesmoke;
     align-content: center;
     margin: 0;
@@ -68,7 +68,11 @@ main {
 }
 
 main p {
+    display: grid;
+    margin: 0;
     font-family: 'Albert Sans', sans-serif;
+    align-items: center;
+    justify-items: center;
 }
 
 section {
@@ -128,9 +132,13 @@ input:valid {
     background: hsla(100, 90%, 70%, 1);
 }
 
-input:focus:invalid {
+input:not(:focus):not(:placeholder-shown):invalid {
     background: hsla(0, 90%, 70%, 1);
 }
+
+/* input:focus:invalid {
+    background: hsla(0, 90%, 70%, 1);
+} */
 
 input:focus {
     margin-top: 0.25em;
