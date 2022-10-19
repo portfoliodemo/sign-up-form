@@ -56,10 +56,15 @@
                     <label for="enter-password">Enter Password:</label>
                     <input type="password" id="enter-password" placeholder="********" name="enterPassword" minlength="16" title="Please enter a password containing at least 16 characters, with at least one digit, one lowercase character, one uppercase character and one symbol." required>                    
                 </div>
+
                 <div class="form-inputs">
                     <label for="confirm-password">Confirm Password:</label>
                     <input type="password" id="confirm-password" placeholder="********" name="confirmPassword" minlength="16" title="Please enter a matching valid password." required>                    
                 </div>
+
+                <div><!-- Empty Div in order to place submit button in right column, not ideal, refactor TODO -->
+                </div>
+
                 <button type="submit" id="submit-btn">Create Account</button>
             </form>
             <p>Already have an account? <a href="#" title="Login">Login</a></p>
